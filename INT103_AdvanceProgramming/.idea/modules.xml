@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/INT103_AdvanceProgramming.iml" filepath="$PROJECT_DIR$/.idea/INT103_AdvanceProgramming.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INT103_WEEK2/INT103_WEEK2.iml" filepath="$PROJECT_DIR$/INT103_WEEK2/INT103_WEEK2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INT103_WEEK3/INT103_WEEK3.iml" filepath="$PROJECT_DIR$/INT103_WEEK3/INT103_WEEK3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/INT103_WEEK4/INT103_WEEK4.iml" filepath="$PROJECT_DIR$/INT103_WEEK4/INT103_WEEK4.iml" />
+    </modules>
+  </component>
+</project>
