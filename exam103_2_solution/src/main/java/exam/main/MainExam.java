@@ -128,7 +128,7 @@ public class MainExam {
         /* EXAM05.2: use a stream to select only the objects in the lds array 
         that the firstname ends with "e". print the result out. */
         System.out.println("exam05.2 ----------");
-        Arrays.stream(lds).filter(o -> o.evalFirstname(s -> s.endsWith("e")));
+        Arrays.stream(lds).filter(o -> o.evalFirstname(s -> s.endsWith("e"))).forEach(System.out::println);
         
     }
 }
