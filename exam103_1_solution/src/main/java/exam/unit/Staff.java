@@ -1,8 +1,10 @@
+
 package exam.unit;
+
+//4. (5 points) Create a public class named Staff in exam.unit package and 
 
 import solution.base.OrgUnit;
 
-//4. (5 points) Create a public class named Staff in exam.unit package and 
 //the Staff class contains the following attributes: id (int), firstname (String), 
 //lastname (String), and affiliation (OrgUnit) which are all private.
 //  4.1. This class has a constructor that receives parameters to initialize all of its attributes. 
@@ -55,6 +57,8 @@ public class Staff {
     public void setAffiliation(OrgUnit affiliation) {
         this.affiliation = affiliation;
     }
+    
+    
     
     
 }

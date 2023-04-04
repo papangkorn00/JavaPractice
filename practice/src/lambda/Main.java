@@ -1,24 +1,22 @@
 
 package lambda;
 
+import java.util.Arrays;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
-       /* String name = "Papangkorn";
-        char symbol = '!';
+        List<String> names = Arrays.asList("Pete","Peter","Daisy","Anthony");
         
+        //LambdaExpression
+        names.stream().filter(name -> name.startsWith("P")).forEach(System.out::println);
         
-        MyInterface myInterface = (x,y) -> {
-            System.out.println("Hello World");
-            System.out.println("Hello " + x);
-            System.out.println("Hello World"+y);
-        };
-                
-        MyInterface myInterface2 = (x,y) -> {
-            System.out.println("Hello " +x+y);
-        };
+        //Sort by method ref.
+        names.sort(String::compareToIgnoreCase);
+        System.out.println(names);
         
-        myInterface2.message(name,symbol); */
-        
-    } 
+        //Map lambda 
+        List<Integer> nameLengths = names.stream().map(name -> name.length()).toList();
+        System.out.println(nameLengths);
+    }
 }

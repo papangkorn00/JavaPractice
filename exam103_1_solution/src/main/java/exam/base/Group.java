@@ -1,5 +1,9 @@
 package exam.base;
 
+//5. (10 points) Given the following Group class that works as a group of Objects. 
+//Convert this code to use Generic; i.e., Group<T>. In case that the given code 
+//works incorrectly, correct it as well.
+
 public class Group<T> {
 
     private final T[] ts;
@@ -14,11 +18,11 @@ public class Group<T> {
     }
 
     public boolean append(T o) {
-        if (ts == null || size == ts.length) {
+        if (o == null || size == ts.length) {
             return false;
         }
         for (int i = 0; i < size; i++) {
-            if (ts[i] == ts) {
+            if (ts[i] == o) {
                 return false;
             }
         }

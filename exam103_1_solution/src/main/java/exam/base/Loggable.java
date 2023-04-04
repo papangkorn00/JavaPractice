@@ -6,9 +6,6 @@ package exam.base;
 //will reset the existing logging to an empty string.
 
 public interface Loggable {
-    public String getLog();
-    public void clearLog();
+    String getLog();
+    void clearLog();
 }
-
-
-

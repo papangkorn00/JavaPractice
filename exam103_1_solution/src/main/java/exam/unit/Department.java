@@ -20,4 +20,5 @@ public class Department extends OrgUnit {
         this.school = school;
         this.logging += school.getCode() + ";";
     }
+
 }

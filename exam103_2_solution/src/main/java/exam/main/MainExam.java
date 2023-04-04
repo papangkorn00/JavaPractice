@@ -9,14 +9,14 @@ public class MainExam {
 
     // replace 999 with the last three digits of your student id.
     // replace YOUR_STUDENT_ID with your "student id inside a quote".
-    private static final ToCompare[] cmps = { new ToCompare(999, "YOUR_STUDENT_ID"),
+    private static final ToCompare[] cmps = { new ToCompare(041, "65130500041"),
         new ToCompare(-7, "Seven"), new ToCompare(-2, "Two"), 
         new ToCompare(-9, "Nine"), new ToCompare(-3, "Three") };
     
     // replace YOUR_FIRSTNAME with your firstname.
     // replace YOUR_LASTNAME with your lastname.
     private static final ToBeLambda[] lds = {
-        new ToBeLambda("YOUR_FIRSTNAME", "YOUR_LASTNAME"),
+        new ToBeLambda("Papangkorn", "Kijsakulrat"),
         new ToBeLambda("Steve","Johnson"),
         new ToBeLambda("Joseph","Aliba"), 
         new ToBeLambda("Alice","Smith")
@@ -35,26 +35,22 @@ public class MainExam {
 
         /* EXAM01: change ToBeEnum class to ToBeEnum enum that consists of
         the following enum values: FRESHMAN, SOPHOMORE, JUNIOR, SENIOR */
-        ToBeEnum FRESHMAN = new ToBeEnum(1, "Freshman");
-        ToBeEnum SOPHOMORE = new ToBeEnum(2, "Sophomore");
-        ToBeEnum JUNIOR = new ToBeEnum(3, "Junior");
-        ToBeEnum SENIOR = new ToBeEnum(4, "Senior");
 
-        System.out.println("  " + FRESHMAN
-                + " : " + FRESHMAN.getName()
-                + " (" + FRESHMAN.getYear() + ")");
+        System.out.println("  " + ToBeEnum.FRESHMAN
+                + " : " + ToBeEnum.FRESHMAN.getName()
+                + " (" + ToBeEnum.FRESHMAN.getYear() + ")");
 
-        System.out.println("  " + SOPHOMORE
-                + " : " + SOPHOMORE.getName()
-                + " (" + SOPHOMORE.getYear() + ")");
+        System.out.println("  " + ToBeEnum.SOPHOMORE
+                + " : " + ToBeEnum.SOPHOMORE.getName()
+                + " (" + ToBeEnum.SOPHOMORE.getYear() + ")");
 
-        System.out.println("  " + JUNIOR
-                + " : " + JUNIOR.getName()
-                + " (" + JUNIOR.getYear() + ")");
+        System.out.println("  " + ToBeEnum.JUNIOR
+                + " : " + ToBeEnum.JUNIOR.getName()
+                + " (" + ToBeEnum.JUNIOR.getYear() + ")");
 
-        System.out.println("  " + SENIOR
-                + " : " + SENIOR.getName()
-                + " (" + SENIOR.getYear() + ")");
+        System.out.println("  " + ToBeEnum.SENIOR
+                + " : " + ToBeEnum.SENIOR.getName()
+                + " (" + ToBeEnum.SENIOR.getYear() + ")");
     }
 
     private static void exam02ToCompare() {

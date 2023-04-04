@@ -1,3 +1,4 @@
+
 package exam.base;
 
 //1. (20 points) Given the following two classes (School and Department) 
@@ -6,17 +7,17 @@ package exam.base;
 //(attributes, methods, and constructors) in School and Department to OrgUnit 
 //as many as possible and changing access modifiers minimally if needed.
 
-public class OrgUnit implements Loggable {
+public abstract class OrgUnit implements Loggable {
     private final int code;
     private String name;
-    private String logging;
+    protected String logging;
 
     public OrgUnit(int code, String name, String logging) {
         this.code = code;
         this.name = name;
         this.logging = "";
     }
-    
+
     public int getCode() {
         return code;
     }
@@ -29,11 +30,16 @@ public class OrgUnit implements Loggable {
         this.name = name;
     }
 
+    @Override
     public String getLog() {
         return logging;
     }
     
-    public void clearLog() {
+    @Override
+    public void clearLog(){
         logging = "";
     }
+    
+    
+    
 }

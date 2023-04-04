@@ -5,10 +5,9 @@ import solution.base.OrgUnit;
 public class School extends OrgUnit {
 
     private double balance;
-
-
+    
     public School(int code, String name) {
-       super(code,name);
+        super(code,name);
     }
 
     public double getBalance() {
@@ -24,4 +23,5 @@ public class School extends OrgUnit {
         balance -= amount;
         logging += "spend(" + amount + ")";
     }
+
 }
