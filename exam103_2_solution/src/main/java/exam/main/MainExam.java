@@ -1,6 +1,7 @@
 package exam.main;
 
-import exam.base.ToBeEnum;
+//import exam.base.ToBeEnum;
+import static exam.base.ToBeEnum.*;
 import exam.base.ToBeLambda;
 import exam.base.ToCompare;
 import exam.base.ToIterate;
@@ -36,21 +37,21 @@ public class MainExam {
         /* EXAM01: change ToBeEnum class to ToBeEnum enum that consists of
         the following enum values: FRESHMAN, SOPHOMORE, JUNIOR, SENIOR */
 
-        System.out.println("  " + ToBeEnum.FRESHMAN
-                + " : " + ToBeEnum.FRESHMAN.getName()
-                + " (" + ToBeEnum.FRESHMAN.getYear() + ")");
+        System.out.println("  " + FRESHMAN
+                + " : " + FRESHMAN.getName()
+                + " (" + FRESHMAN.getYear() + ")");
 
-        System.out.println("  " + ToBeEnum.SOPHOMORE
-                + " : " + ToBeEnum.SOPHOMORE.getName()
-                + " (" + ToBeEnum.SOPHOMORE.getYear() + ")");
+        System.out.println("  " + SOPHOMORE
+                + " : " + SOPHOMORE.getName()
+                + " (" + SOPHOMORE.getYear() + ")");
 
-        System.out.println("  " + ToBeEnum.JUNIOR
-                + " : " + ToBeEnum.JUNIOR.getName()
-                + " (" + ToBeEnum.JUNIOR.getYear() + ")");
+        System.out.println("  " + JUNIOR
+                + " : " + JUNIOR.getName()
+                + " (" + JUNIOR.getYear() + ")");
 
-        System.out.println("  " + ToBeEnum.SENIOR
-                + " : " + ToBeEnum.SENIOR.getName()
-                + " (" + ToBeEnum.SENIOR.getYear() + ")");
+        System.out.println("  " + SENIOR
+                + " : " + SENIOR.getName()
+                + " (" + SENIOR.getYear() + ")");
     }
 
     private static void exam02ToCompare() {
@@ -60,7 +61,7 @@ public class MainExam {
         so that it can compare two ToCompare objects by their names. */
 
         /* EXAM02.2: implement compareByValue in the ToCompare class
-        so that it can compare two ToCompare objects by thier values. */
+        so that it can compare two ToCompare objects by th  ier values. */
 
         System.out.print("  Unsorted");
         for (ToCompare cmp : cmps) System.out.print(" : " + cmp);

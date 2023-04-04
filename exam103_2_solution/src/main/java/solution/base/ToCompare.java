@@ -15,5 +15,5 @@ public class ToCompare implements Comparable<ToCompare> {
 
     // ANSWER 2.1
     @Override public int compareTo(ToCompare o) { return name.compareTo(o.name); }
-
+    
 }

@@ -1,6 +1,6 @@
 package exam.base;
 
-public class ToCompare { // implements Comparable so that two ToCompare objects can be compared by name
+public class ToCompare implements Comparable<ToCompare> { // implements Comparable so that two ToCompare objects can be compared by name
     private final int value;
     private final String name;
 
@@ -9,7 +9,15 @@ public class ToCompare { // implements Comparable so that two ToCompare objects 
 
     // implement this method so that two ToCompare objects can be compared by ###value####
     public static int compareByValue(ToCompare o1, ToCompare o2) {
-        return 0; // modify this line
+        return o1.value - o2.value; // modify this line
     }
+
+    @Override
+    public int compareTo(ToCompare o) {
+        return name.compareTo(o.name);
+    }
+
+    
+    
 
 }
