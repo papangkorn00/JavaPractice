@@ -11,7 +11,7 @@ public class ToBeLambda {
     @Override public String toString() { return "ToBeLambda(" + firstname + ":" + lastname + ")"; }
     
     // replace null with a lambda expression to compare objects by the firstname
-    public static Comparator<ToBeLambda> compareByFirstname = null;
+    public static Comparator<ToBeLambda> compareByFirstname = (x,y) -> x.firstname.compareTo(y.firstname);
     
     public boolean evalFirstname(Predicate<String> p) { return p.test(firstname); }
 }

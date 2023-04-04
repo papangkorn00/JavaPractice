@@ -5,6 +5,7 @@ import static exam.base.ToBeEnum.*;
 import exam.base.ToBeLambda;
 import exam.base.ToCompare;
 import exam.base.ToIterate;
+import java.util.Arrays;
 
 public class MainExam {
 
@@ -69,14 +70,14 @@ public class MainExam {
 
         /* EXAM02.3: call Arrays.sort() method so that it sorts 
         the cmps array by the name of ToCompare objects */
-        //Arrays.sort(....);
+        Arrays.sort(cmps);
         System.out.print("  Sort by Name");
         for (ToCompare cmp : cmps) System.out.print(" : " + cmp);
         System.out.println();
 
         /* EXAM02.4: call Arrays.sort() method and provide a comparator
         so that it sorts the cmps array by the values of ToCompare objects */
-        //Arrays.sort(....);
+        Arrays.sort(cmps, ToCompare::compareTo);
         System.out.print("  Sort by Value");
         for (ToCompare cmp : cmps) System.out.print(" : " + cmp);
         System.out.println();
@@ -104,14 +105,14 @@ public class MainExam {
         
         /* EXAM04.2: call Arrays.sort() method and provide a comparator
         so that it sorts the lds array by the firstname */
-        //Arrays.sort(...);
+        Arrays.sort(lds, ToBeLambda.compareByFirstname);
         System.out.print("  Sorted by Firstname");
         for (ToBeLambda ld : lds) System.out.print(" : " + ld);
         System.out.println();
 
         /* EXAM04.3: call Arrays.sort() method and provide a comparator
         so that it sorts the lds array by the firstname in a reverse order */
-        //Arrays.sort(...);
+        Arrays.sort(lds, ToBeLambda.compareByFirstname.reversed());
         System.out.print("  Sorted by Firstname in a reverse order");
         for (ToBeLambda ld : lds) System.out.print(" : " + ld);
         System.out.println();
@@ -122,12 +123,12 @@ public class MainExam {
 
         /* EXAM05.1: use a stream to print all objects in the cmps array out. */
         System.out.println("exam05.1 ----------");
-        //Arrays.stream(cmps)...
+        Arrays.stream(cmps).forEach(System.out::println);
 
         /* EXAM05.2: use a stream to select only the objects in the lds array 
         that the firstname ends with "e". print the result out. */
         System.out.println("exam05.2 ----------");
-        //Arrays.stream(lds)....
+        Arrays.stream(lds).filter(o -> o.evalFirstname(s -> s.endsWith("e")));
         
     }
 }
