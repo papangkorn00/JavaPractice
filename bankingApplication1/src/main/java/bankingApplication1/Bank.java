@@ -1,13 +1,12 @@
-package bank;
-
-import account.Account;
+package bankingApplication1;
 
 public class Bank {
+    private String Name;
+    
+    public Bank(){}
 
-    private String bankName;
-
-    public Bank(String bankName) {
-        this.bankName = bankName;
+    public Bank(String Name) {
+        this.Name = Name;
     }
 
     public void openAccount(Account account) {

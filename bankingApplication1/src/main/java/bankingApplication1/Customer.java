@@ -1,4 +1,4 @@
-package customer;
+package bankingApplication1;
 
 public class Customer {
     private int idCard;
@@ -14,19 +14,19 @@ public class Customer {
     }
 
     public int getIdCard(){
-        
+        return this.idCard;
     }
     
     public String getFirstName(){
-        
+        return this.firstName;
     }
     
     public String getLastName(){
-        
+        return this.lastName;
     }
     
     public String getPhoneNumber(){
-        
+        return this.phoneNumber;
     }
     
 }
