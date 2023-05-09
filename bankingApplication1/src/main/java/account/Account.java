@@ -1,4 +1,4 @@
-package workshop;
+package account;
 
 public class Account {
 
@@ -12,14 +12,16 @@ public class Account {
         this.balance = balance;
     }
 
-    public void deposite() {
+    public void deposite(double amount) {
+        
     }
 
-    public void withdraw() {
+    public void withdraw(double amount) {
+        
     }
 
     public double getBalance() {
-
+        
     }
 
     public int getAccountNumber() {

@@ -1,4 +1,4 @@
-package workshop;
+package customer;
 
 public class Customer {
     private int idCard;
@@ -6,13 +6,13 @@ public class Customer {
     private String lastName;
     private String phoneNumber;
 
-    public Customer(String idCard, String firstName, String lastName, String phoneNumber) {
+    public Customer(int idCard, String firstName, String lastName, String phoneNumber) {
         this.idCard = idCard;
         this.firstName = firstName;
         this.lastName = lastName;
         this.phoneNumber = phoneNumber;
     }
-    
+
     public int getIdCard(){
         
     }
