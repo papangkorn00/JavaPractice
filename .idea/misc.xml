@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/int200w2w/pom.xml" />
+        <option value="$PROJECT_DIR$/t05stream/pom.xml" />
+        <option value="$PROJECT_DIR$/int103w05w/pom.xml" />
+        <option value="$PROJECT_DIR$/int103w06w/pom.xml" />
+        <option value="$PROJECT_DIR$/int103w08t/pom.xml" />
+        <option value="$PROJECT_DIR$/int101mid2022/pom.xml" />
+        <option value="$PROJECT_DIR$/int101final2022/pom.xml" />
+        <option value="$PROJECT_DIR$/exam103_1_solution/pom.xml" />
+        <option value="$PROJECT_DIR$/exam103_2_solution/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_20" default="true" project-jdk-name="20" project-jdk-type="JavaSDK" />
+</project>

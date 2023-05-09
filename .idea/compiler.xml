@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="int103w06w" />
+        <module name="exam103_2_solution" />
+        <module name="t05stream" />
+        <module name="int103w08t" />
+        <module name="int101final2022" />
+        <module name="exam103_1_solution" />
+        <module name="int200w2w" />
+        <module name="int103w05w" />
+        <module name="int101mid2022" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>

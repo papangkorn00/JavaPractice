@@ -34,12 +34,11 @@ public abstract class OrgUnit implements Loggable {
     public String getLog() {
         return logging;
     }
-    
+
     @Override
-    public void clearLog(){
+    public void clearLog() {
         logging = "";
     }
-    
-    
-    
+
+
 }
