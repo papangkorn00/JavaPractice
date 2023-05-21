@@ -19,7 +19,7 @@ public class GenericTutorial {
 }
 
 class MyList<T>{
-    private T[] items;
+    private final T[] items;
     private int size;
 
     public MyList() {
